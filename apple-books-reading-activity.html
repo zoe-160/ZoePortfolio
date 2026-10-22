@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Apple Books Reading Activity product concept by Zoe McCoy." name="description"/>
+<title>Apple Books — Reading Activity — Zoe McCoy Portfolio</title>
+<link href="apple-books-reading-activity.css" rel="stylesheet"/>
+</head>
+<body class="case-page books-case">
+<header class="site-header">
+<nav class="nav shell">
+<a class="brand" href="index.html">Zoe McCoy Portfolio</a>
+<button aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" type="button"><span></span><span></span></button>
+<div class="nav-links">
+<a href="index.html#work">Work</a>
+<a href="index.html#about">About</a>
+<a href="Zoe_McCoy_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+<a href="https://www.linkedin.com/in/zoe-mccoy/" rel="noreferrer" target="_blank">LinkedIn ↗</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="case-intro shell">
+<div class="case-title-block" data-reveal="">
+<a class="back-link" href="index.html#work">← Selected work</a>
+<p class="case-label">04 · Product Feature Concept</p>
+<h1 class="display">Apple Books —<br/>Reading Activity</h1>
+<p class="case-subtitle">A reading-timer and activity concept that lets readers track chapter pace without leaving Apple Books, then review how their reading changes over time.</p>
+<p class="concept-note">Independent concept project. Not affiliated with Apple.</p>
+<div class="case-actions"><a class="button button-dark" href="https://maple-spin-87134673.figma.site/" rel="noreferrer" target="_blank">Open interactive prototype ↗</a><a class="button button-ghost" href="#problem">See the process ↓</a></div>
+</div>
+<dl class="case-facts" data-reveal="">
+<div><dt>ROLE</dt><dd>Product Designer</dd></div>
+<div><dt>FORMAT</dt><dd>Independent feature concept</dd></div>
+<div><dt>FOCUS</dt><dd>Reading behavior + progress tracking</dd></div>
+<div><dt>PROTOTYPE</dt><dd>Figma Make</dd></div>
+</dl>
+</section>
+
+<section class="case-visual shell" data-reveal="">
+<div class="case-visual-inner books-hero-media">
+<div class="visual-label"><span>APPLE BOOKS / READING ACTIVITY</span><span>TIME → READ → REVIEW</span></div>
+<div class="books-hero-copy"><span>FEATURE EXTENSION</span><strong class="display">Track the chapter without leaving the book.</strong></div>
+<div class="books-hero-browser"><img alt="Apple Books chapter reading screen with a reading timer icon in the upper-right corner" src="apple-books-reader.png"/></div>
+<div class="books-hero-modal"><img alt="Reading timer start state showing chapter details and a Start reading button" src="apple-books-timer-start.png"/></div>
+</div>
+</section>
+
+<section class="case-content shell">
+<aside class="case-rail">
+<div class="rail-sticky">
+<span>CASE STUDY</span>
+<a href="#problem">Problem</a>
+<a href="#flow">Timer flow</a>
+<a href="#activity">Reading activity</a>
+<a href="#prototype">Prototype</a>
+<a href="#reflection">Reflection</a>
+</div>
+</aside>
+<div class="case-sections">
+
+<section class="case-block" data-reveal="" id="problem">
+<div class="block-head"><span>01</span><h2 class="display">A small interruption in the reading flow</h2></div>
+<div class="block-body">
+<p class="case-lede">The concept came from something I was already doing while reading in Apple Books. I wanted to track how quickly I was reading a chapter, but the only way to time myself was to leave the book, open the Clock app, start a timer, and switch back.</p>
+<p>That extra step felt especially noticeable because the measurement depends on time. Starting or stopping a timer in another app adds friction and makes the process less precise than it needs to be.</p>
+<p>Instead of treating the timer as a separate tool, I explored what it could look like if Apple Books supported that behavior directly. The feature begins with a chapter timer, then uses completed sessions to build a longer-term view of reading pace across chapters and books.</p>
+<p class="hmw">How could Apple Books let a reader measure chapter pace without interrupting the reading experience?</p>
+<div class="opportunity-grid">
+<div><span>TIME IN CONTEXT</span><b>Start the timer from the chapter itself instead of switching to another app.</b></div>
+<div><span>AUTOMATIC COMPLETION</span><b>Stop the session when the reader moves past the last page of the chapter.</b></div>
+<div><span>LONGER-TERM VALUE</span><b>Save completed sessions so pace can be reviewed over time and across books.</b></div>
+</div>
+</div>
+</section>
+
+<section class="case-block" data-reveal="" id="flow">
+<div class="block-head"><span>02</span><h2 class="display">Designing the timer around the chapter</h2></div>
+<div class="block-body">
+<p class="case-lede">The timer is intentionally lightweight. It appears as a clock icon in the reading interface and only expands when the reader chooses to use it.</p>
+<p>At the start of a chapter, the reader can begin timing from a small modal that identifies the chapter and page count. While the session is active, elapsed time stays visible with options to pause or end the session manually. If the reader completes the chapter normally, the timer stops automatically after the final page and saves the result.</p>
+<div class="process-strip">
+<div><span>01</span><b>Start from the chapter so timing begins without leaving the reading context.</b></div>
+<div><span>02</span><b>Keep the active state simple: elapsed time, Pause, and End.</b></div>
+<div><span>03</span><b>Use chapter completion as the default stopping point instead of requiring another manual action.</b></div>
+<div><span>04</span><b>Confirm the saved session with elapsed time and reading pace, then offer an optional path into Reading Activity.</b></div>
+</div>
+<div class="timer-state-grid">
+<figure class="timer-state"><div class="timer-state-frame"><img alt="Reading timer start state" src="apple-books-timer-start.png"/></div><figcaption><span>START</span><strong>Begin from the chapter.</strong><p>The reader sees what will be timed before starting the session.</p></figcaption></figure>
+<figure class="timer-state"><div class="timer-state-frame"><img alt="Active reading timer showing elapsed time with pause and end controls" src="apple-books-timer-active.png"/></div><figcaption><span>ACTIVE</span><strong>Keep timing visible but secondary.</strong><p>The active state supports pausing or ending without taking over the reading experience.</p></figcaption></figure>
+<figure class="timer-state"><div class="timer-state-frame completion-frame"><img alt="Chapter complete confirmation showing elapsed time and reading pace" src="apple-books-session-complete.png"/></div><figcaption><span>COMPLETE</span><strong>Save the result automatically.</strong><p>The completion state confirms that the session was recorded and links to the broader activity view.</p></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="case-block" data-reveal="" id="activity">
+<div class="block-head"><span>03</span><h2 class="display">Turning individual sessions into useful history</h2></div>
+<div class="block-body">
+<p class="case-lede">A timer solves the immediate problem, but the session becomes more useful when it can be compared with previous reading.</p>
+<p>Reading Activity brings completed sessions together in one place. The dashboard summarizes average pace, time read, and chapters completed, while the trend view shows how pace changes over time. A book-level comparison adds context by showing that reading speed may vary depending on what someone is reading.</p>
+<figure class="books-wide-shot"><div class="books-shot-frame"><img alt="Reading Activity dashboard with reading pace, time read, chapter count, pace over time, and pace by book" src="apple-books-reading-activity.png"/></div><figcaption><span>READING ACTIVITY</span><strong>Progress is visible without reducing reading to a single number.</strong><p>The dashboard combines recent pace with time spent reading, chapters completed, trend data, and book-level comparisons.</p></figcaption></figure>
+<figure class="books-wide-shot"><div class="books-shot-frame"><img alt="Recent reading sessions listed chapter by chapter with duration and words per minute" src="apple-books-recent-sessions.png"/></div><figcaption><span>SESSION HISTORY</span><strong>Each chapter creates a readable record.</strong><p>The session log keeps the underlying history accessible so the reader can see when, what, and how long they read rather than only viewing an overall average.</p></figcaption></figure>
+</div>
+</section>
+
+<section class="case-block" data-reveal="" id="prototype">
+<div class="block-head"><span>04</span><h2 class="display">Prototyping the full behavior in Figma Make</h2></div>
+<div class="block-body">
+<p>Figma Make helped me connect the timer states to the reading and activity views instead of designing them as isolated screens. The prototype made it easier to work through what happens before a session begins, while timing is active, and after the chapter is completed.</p>
+<p>The main product decisions were about keeping the feature present without making it intrusive: the timer is optional, the active state remains compact, chapter completion handles the default stop, and the analytics live outside the reading screen until the reader chooses to view them.</p>
+<div class="prototype-callout books-callout">
+<div><span>INTERACTIVE PROTOTYPE</span><h3 class="display">START → READ → AUTO-SAVE → REVIEW</h3><p>The prototype connects the in-book timer with the longer-term Reading Activity experience.</p></div>
+<a class="prototype-status prototype-link" href="https://maple-spin-87134673.figma.site/" rel="noreferrer" target="_blank">Open interactive prototype ↗</a>
+</div>
+</div>
+</section>
+
+<section class="case-block" data-reveal="" id="reflection">
+<div class="block-head"><span>05</span><h2 class="display">What I would evaluate next</h2></div>
+<div class="block-body">
+<p class="case-lede">The concept started with a personal need, so the next step would be understanding when reading-speed tracking is genuinely useful to other readers and when it risks becoming distracting.</p>
+<p>I would want to test whether readers prefer timing complete chapters or shorter sessions, how often they return to pace history, and whether comparing speed across different books feels informative or misleading. I would also evaluate how much of the timer should remain visible while someone is reading so the feature supports the experience without changing the way they read.</p>
+</div>
+</section>
+
+</div>
+</section>
+<section class="next-project shell"><span>BACK TO PROJECT 01</span><a href="scoops.html"><strong class="display">Scoops</strong><span>↗</span></a></section>
+</main>
+<script defer="" src="case-study.js"></script>
+</body>
+</html>
